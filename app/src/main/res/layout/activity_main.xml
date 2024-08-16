@@ -1,31 +1,45 @@
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/purple_200"
-    tools:context=".MainActivity">
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="10sp"
-    android:text="To Do List"
-    android:layout_gravity="center"
-    android:textSize="30sp"
-    android:layout_marginTop="20sp" />
+    android:background="#d4c0d9"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <!-- Search Field -->
+    <EditText
+        android:id="@+id/editTextCity"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:hint="Enter City Name"
+        android:inputType="text"
+        android:maxLines="1"
+        android:paddingStart="20dp"
+        android:paddingEnd="20dp"
+        android:textColor="@color/black"
+        android:layout_marginTop="5dp"
+        android:textColorHint="#808B96"
+        android:textSize="16sp" />
+
     <Button
-        android:id="@+id/btnAddTask"
-        android:layout_marginTop="20sp"
-        android:layout_marginLeft="50sp"
+        android:id="@+id/buttonSearch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Add Task" />
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:text="Search"/>
 
-    <androidx.recyclerview.widget.RecyclerView
-        android:layout_marginTop="20sp"
-        android:layout_marginLeft="10sp"
-        android:id="@+id/recyclerView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/textViewWeather"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Weather Info"
+        android:textSize="20sp"/>
+
 
 </LinearLayout>
