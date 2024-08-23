@@ -9,10 +9,13 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/Theme.To_Do_List_App"
+        android:theme="@style/Theme.RecipeApp"
         tools:targetApi="31">
         <activity
-            android:name=".item_task"
+            android:name=".activity_favorites"
+            android:exported="false" />
+        <activity
+            android:name=".activity_recipe_detail"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
